@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNote MD - Canlı Markdown Not Defteri</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Marked.js Kütüphanesi (Markdown'ı HTML'e çevirmek için) -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>📝 QuickNote MD</h1>
+            <p>Sol tarafa yaz, sağ tarafta canlı önizlemesini gör!</p>
+        </header>
+
+        <div class="editor-workspace">
+            <div class="pane">
+                <span class="pane-title">Markdown Girişi</span>
+                <textarea id="markdownInput" placeholder="# Buraya Markdown formatında yazmaya başla..."></textarea>
+            </div>
+            <div class="pane">
+                <span class="pane-title">Canlı Önizleme (HTML)</span>
+                <div id="previewOutput"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
